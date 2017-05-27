@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>product add</title>
+</head>
+<body>
+
+    <form action="{{url_for('addProduct')}}" method="POST">
+
+        <input type="text" name="name" placeholder="name"/>
+        <textarea name="desc" placeholder="description"></textarea>
+        <input type="text" name="price" placeholder="price" />
+        <input type="text" name="imgFront" placeholder="front image link" />
+        <input type="text" name="imgBack" placeholder="back image link" />
+
+        <input type="submit" value="submit" />
+    </form>
+
+</body>
+</html>
